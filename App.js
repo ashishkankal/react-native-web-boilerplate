@@ -22,7 +22,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text> Test asd fghfhg 1234 asdfghg</Text>
+        <Text> Test App !</Text>
       </View>
     );
   }
