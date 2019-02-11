@@ -7,7 +7,8 @@ import StockApp from "../reducers";
 // state in the browser's console for easy debuggin' and instrementing the
 // dev tools allows for us to commit different actions and go forwards and
 // backwards in time using magic
-const createDevStoreWithMiddleware = compose(applyMiddleware(thunk))(
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const createDevStoreWithMiddleware = composeEnhancers(applyMiddleware(thunk))(
   createStore
 );
 
