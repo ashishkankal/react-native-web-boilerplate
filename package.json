@@ -1,0 +1,39 @@
+{
+  "name": "ReactNativeWeb",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-web": "webpack-dev-server  --config ./web/webpack/web.dev.config.js --mode development --inline --hot",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "node-sass": "^4.11.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.8.1",
+    "react-native": "0.58.4",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.1",
+    "redux-thunk": "^2.3.0",
+    "save": "^2.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "24.1.0",
+    "babel-loader": "^8.0.5",
+    "jest": "24.1.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-hot-loader": "^4.6.5",
+    "react-test-renderer": "16.6.3",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
